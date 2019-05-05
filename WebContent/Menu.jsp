@@ -1,48 +1,35 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
 
-	<div class="modal" id="sitemodal" tabindex="01" role="dialog">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-			
-				<div class="modal-header">
-					<h4 class="modal-title"> País Cadastrado com sucesso!</h4>
-					<button type="button" class="close" data-mismiss="modal">
-						<span>OK</span>
-					</button>
-				</div>
-				
-				<div class="modal-body">
-						ID do País: ${pais.id}<br/>
-						Nome do país: ${pais.nome} <br/>
-						População: 	  ${pais.populacao} <br/>
-						Área:		  ${pais.area} <br/>
-				</div>
-				
-				<div class="modal-footer">
-					<button type="button" class="btn btn-danger"> data-mismiss="modal"</button>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-	
-<div class="alert alert-success" role="alert">
-  <h4 class="alert-heading">País cadastrado!</h4>
-  <hr>
-  <p class="mb-0"></p>
-</div>
-
-</head>
-<body>
-
-</body>
-</html>
- 
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.jsp">PÃ¡gina inicial</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="add.jsp">Cadastrar</a>
+                    </li>
+                    <li><a href="#">Marcas</a>
+                    </li>
+                    <li><a href="#">Estilos</a>
+                    </li>
+                    <li><a href="#">PaÃ­ses</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

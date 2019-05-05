@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %><!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de paÃ­ses</title>
 
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-crossorigin="anonymous">
+    <!-- Barra superior com os menus de navegaÃƒÂ§ÃƒÂ£o -->
+	<c:import url="Menu.jsp"/>
+    <!-- Container Principal -->
+    <div id="main" class="container">
+        <h3 class="page-header">Cadastros</h3>
 
-
-<div class="shadow p-3 mb-5 bg-white rounded">CADASTRO DE PAÍSES </div>
-
-<form action="ManterPais.do" method="post">
-
-&nbsp; Nome: &nbsp; &nbsp; &nbsp; &nbsp; <input type="text" name="nome"><br>
-&nbsp; População: &nbsp;    <input type="text" name="populacao"><br>
-&nbsp; Área : &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; <input type="text" name="area"><br>
- &nbsp; <input type="submit" class=" btn btn-outline-primary">
-
-</form>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
