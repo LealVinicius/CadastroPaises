@@ -17,7 +17,7 @@
 	<c:import url="Menu.jsp"/>
     <!-- Container Principal -->
     <div id="main" class="container">
-        <h3 class="page-header">Cadastros</h3>
+        <h3 class="page-header">Gerenciador de países</h3>
 
     </div>
     <script src="js/jquery.min.js"></script>

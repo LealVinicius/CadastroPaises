@@ -23,11 +23,11 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="add.jsp">Cadastrar</a>
                     </li>
-                    <li><a href="#">Marcas</a>
+                    <li><a href="index2.jsp">Paises</a>
                     </li>
                     <li><a href="#">Estilos</a>
                     </li>
-                    <li><a href="#">Países</a>
+                    <li><a href="#">Marcas</a>
                     </li>
                 </ul>
             </div>

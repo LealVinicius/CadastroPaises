@@ -5,7 +5,7 @@
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Create - Gerenciador de Países</title>
+ <title>CRUD com Bootstrap 3</title>
  <link href="css/bootstrap.min.css" rel="stylesheet">
  <link href="css/style.css" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 	<c:import url="Menu.jsp"/>
 
  <div id="main" class="container-fluid">
- <h3 class="page-header">Adicionar País</h3>
+ <h3 class="page-header">Editar país</h3>
  <form action="index.html">
   <!-- area de campos do form -->
   <div class="row">
