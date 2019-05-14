@@ -6,7 +6,7 @@
     <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Read - Gerenciador de Países</title>
+    <title>Mostrar Pais - Gerenciador de Países</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -35,31 +35,30 @@
 </div> 
 <!-- /.modal -->
 
-
-
-
     <!-- Barra superior com os menus de navegaÃ§Ã£o -->
 	<c:import url="Menu.jsp"/>
+	
     <!-- Container Principal -->
     <div id="main" class="container-fluid">
-        <h3 class="page-header">Visualizar pais #0001 </h3>
+        <h3 class="page-header">Visualizar país ${pais.id} </h3>
 
     </div>
     
    <div class="row">
   <div class="col-md-3">
-    <p><strong>Nome do Campo</strong></p>
-    <p>{Valor do Campo}</p>
+    <p><strong>Nome</strong></p>
+    <p>${pais.nome}</p>
   </div>
   <div class="col-md-3">
-    <p><strong>Nome do Campo</strong></p>
-    <p>{Valor do Campo}</p>
+    <p><strong>População</strong></p>
+    <p>${pais.populacao}</p>
   </div>
   <div class="col-md-3">
-    <p><strong>Nome do Campo</strong></p>
-    <p>{Valor do Campo}</p>
+    <p><strong>Área</strong></p>
+    <p>${pais.area}</p>
   </div>
-</div> <!-- .row -->
+</div>
+ <!-- .row -->
     
     <hr />
 <div id="actions" class="row">

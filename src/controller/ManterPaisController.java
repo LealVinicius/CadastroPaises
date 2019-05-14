@@ -52,7 +52,7 @@ public class ManterPaisController extends HttpServlet {
 			ps.criar(p);
 			ArrayList<Pais> lista = new ArrayList<>();
 			lista.add(p);
-			session.setAttribute("lista", lista);
+			session.setAttribute("pais", p);
 			view = request.getRequestDispatcher("MostrarPais.jsp");
 		}
 		else if (pAcao.equals("Excluir")) {

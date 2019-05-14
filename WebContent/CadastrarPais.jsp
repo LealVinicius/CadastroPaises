@@ -20,17 +20,17 @@
 			<div class="row">
 				<div class="form-group col-md-4">
 					<label for="campo1">Nome</label> <input type="text"
-						class="form-control" id="nome">
+						class="form-control" name="nome" id="nome">
 				</div>
 
 				<div class="form-group col-md-4">
 					<label for="campo2">População</label> <input type="text"
-						class="form-control" id="populacao">
+						class="form-control" name="populacao" id="populacao">
 				</div>
 
 				<div class="form-group col-md-4">
 					<label for="campo3">Área</label> <input type="text"
-						class="form-control" id="area">
+						class="form-control" name="area" id="area">
 				</div>
 			</div>
 			<hr />

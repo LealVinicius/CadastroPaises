@@ -56,7 +56,7 @@
     </div>
  
     <div class="col-md-3">
-        <a href="add.jsp" class="btn btn-primary pull-right h2">Novo Pais</a>
+        <a href="CadastrarPais.jsp" class="btn btn-primary pull-right h2">Novo Pais</a>
     </div>
 </div> <!-- /#top -->
      <hr />
@@ -68,37 +68,37 @@
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
+                    <th>Popualação</th>
                     <th>Área</th>
-                    <th>Popuação</th>
                     <th class="actions">Ações</th>
                  </tr>
             </thead>
             <tbody>
  
                 <tr>
-                    <td>1001</td>
-                    <td>Exemplo de País</td>
-                    <td>0000</td>
-                    <td>000000</td>
+                    <td>${pais.id}</td>
+                    <td>${pais.nome}</td>
+                    <td>${pais.populacao}</td>
+                    <td>${pais.area}</td>
                     <td class="actions">
-                        <a class="btn btn-success btn-xs" href="read.jsp">Visualizar</a>
-                        <a class="btn btn-warning btn-xs" href="edit.jsp">Editar</a>
+                        <a class="btn btn-success btn-xs" href="MostrarPais.jsp">Visualizar</a>
+                        <a class="btn btn-warning btn-xs" href="EditarPais.jsp">Editar</a>
                         <a class="btn btn-danger btn-xs"  href="#" data-toggle="modal" data-target="#delete-modal">Excluir</a>
                     </td>
                 </tr>
  
- 				<c:forEach var="cliente" items="${lista }">
+ 				<c:forEach var="cliente" items="${lista}">
 					<tr>
-						<td>${cliente.id }</td>
-						<td>${cliente.nome }</td>
-						<td>${cliente.fone }</td>
-						<td>${cliente.email }</td>
+						<td>${pais.id}</td>
+						<td>${pais.nome}</td>
+						<td>${pais.populacao}</td>
+						<td>${pais.area }</td>
 						<td class="actions"><a class="btn btn-success btn-xs"
-							href="ManterPaisController.do?acao=Visualizar&id=${pais.id }">Visualizar</a>								<a class="btn btn-warning btn-xs"
-								href="ManterCliente.do?acao=Editar&id=${pais.id }">Editar</a>
+							href="ManterPais.do?acao=Visualizar&id=${pais.id}">Visualizar</a>								<a class="btn btn-warning btn-xs"
+								href="ManterCliente.do?acao=Editar&id=${pais.id}">Editar</a>
 								<button id="btn${pais.id }%>" type="button"
 								class="btn btn-danger btn-xs" data-toggle="modal"
-								data-target="#delete-modal" data-cliente="${pais.id }">Excluir</button>
+								data-target="#delete-modal" data-cliente="${pais.id}">Excluir</button>
 						</td>
 					</tr>
 				</c:forEach>
